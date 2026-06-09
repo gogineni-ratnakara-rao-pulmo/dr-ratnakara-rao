@@ -3,8 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
+    .quick-access{
+margin-top:20px;
+}
+
+.action-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:15px;
+}
+
+.action-card{
+display:flex;
+align-items:center;
+gap:15px;
+padding:18px;
+border-radius:15px;
+text-decoration:none;
+color:white;
+font-weight:600;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.action-card:hover{
+transform:translateY(-3px);
+}
+
+.action-card i{
+font-size:40px;
+}
+
+.action-card h3{
+margin:0;
+}
+
+.action-card p{
+margin:0;
+font-size:14px;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.call{
+background:#0d6efd;
+}
+
+.apollo{
+background:#005baa;
+}
+
+.maps{
+background:#ea4335;
+}
+
+.instagram{
+background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
+}
+
+.facebook{
+background:#1877f2;
+}
 *{
     margin:0;
     padding:0;
@@ -90,14 +155,14 @@ footer{
    <div class="header">
 
 <img src="doctor.jpg"
-     alt="Dr. Gogineni Ratnakara Rao"
-     style="
-     width:180px;
-     height:180px;
-     border-radius:50%;
-     object-fit:cover;
-     border:5px solid white;
-     margin-bottom:20px;">
+style="
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 4px 20px rgba(0,0,0,0.2);
+margin-bottom:20px;">
 
 <h1>Dr. Gogineni Ratnakara Rao</h1>
 
@@ -121,42 +186,68 @@ footer{
 
     <div class="card">
         <h2>Quick Access</h2>
+        <div class="quick-access">
 
-        <div class="buttons">
+<h2>Quick Access</h2>
 
-            <a class="btn call"
-               href="tel:+917416443331">
-               📞 Call Now
-            </a>
+<div class="action-grid">
 
-            <a class="btn whatsapp"
-               href="https://wa.me/917416443331">
-               💬 WhatsApp
-            </a>
-
-            <a class="btn appointment"
-               href="https://www.apollohospitals.com/doctors/pulmonologist/hyderabad/dr-gogineni-ratnakara-rao">
-               📅 Book Appointment
-            </a>
-            <a class="btn appointment"
-href="https://www.apollohospitals.com/doctors/pulmonologist/hyderabad/dr-gogineni-ratnakara-rao">
-🌐 Apollo Profile
+<a href="https://wa.me/917416443331" class="action-card whatsapp">
+<i class="fab fa-whatsapp"></i>
+<div>
+<h3>WhatsApp</h3>
+<p>Chat on WhatsApp</p>
+</div>
 </a>
 
-            <a class="btn location"
-               href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5">
-               📍 Get Directions and ⭐ Leave a Review
-            </a>
+<a href="tel:+917416443331" class="action-card call">
+<i class="fas fa-phone"></i>
+<div>
+<h3>Call Now</h3>
+<p>+91 74164 43331</p>
+</div>
+</a>
 
-            <a class="btn instagram"
-               href="https://www.instagram.com/gogineni.ratnakar">
-               📸 Instagram
-            </a>
+<a href="https://www.apollohospitals.com/doctors/pulmonologist/hyderabad/dr-gogineni-ratnakara-rao"
+class="action-card apollo">
+<i class="fas fa-calendar-check"></i>
+<div>
+<h3>Book Appointment</h3>
+<p>Apollo Hospitals</p>
+</div>
+</a>
 
-            <a class="btn facebook"
-               href="https://www.facebook.com/share/18VjXp3kBV/">
-               📘 Facebook
-            </a>
+<a href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5"
+class="action-card maps">
+<i class="fas fa-location-dot"></i>
+<div>
+<h3>Directions</h3>
+<p>Open Maps</p>
+</div>
+</a>
+
+<a href="https://www.instagram.com/gogineni.ratnakar"
+class="action-card instagram">
+<i class="fab fa-instagram"></i>
+<div>
+<h3>Instagram</h3>
+<p>Follow Us</p>
+</div>
+</a>
+
+<a href="https://www.facebook.com/share/18VjXp3kBV/"
+class="action-card facebook">
+<i class="fab fa-facebook"></i>
+<div>
+<h3>Facebook</h3>
+<p>Connect</p>
+</div>
+</a>
+
+</div>
+
+</div>
+        
 
         </div>
     </div>
