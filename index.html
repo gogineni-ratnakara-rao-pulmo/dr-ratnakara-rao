@@ -148,6 +148,47 @@ footer{
     padding:20px;
     margin-top:30px;
 }
+    .expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:12px;
+    margin-top:15px;
+}
+
+.expertise-item{
+    background:#f5f8ff;
+    border-left:4px solid #005baa;
+    padding:12px;
+    border-radius:10px;
+    font-weight:600;
+}
+    .consultation-row{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.consult-box{
+    flex:1;
+    min-width:220px;
+    background:#f8faff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.consult-box i{
+    font-size:30px;
+    color:#005baa;
+    margin-bottom:10px;
+}
+
+.consult-box h3{
+    margin:10px 0;
+    color:#005baa;
+}
 </style>
 </head>
 
@@ -253,41 +294,59 @@ class="action-card facebook">
     </div>
 
     <div class="card">
-        <h2>Areas of Expertise</h2>
-        <ul>
-            <li>Asthma & Allergy</li>
-            <li>COPD</li>
-            <li>Tuberculosis</li>
-            <li>Lung Infections</li>
-            <li>Interstitial Lung Disease (ILD)</li>
-            <li>Sleep Apnea & Sleep Disorders</li>
-            <li>Bronchoscopy</li>
-            <li>EBUS Procedures</li>
-            <li>Pleural Diseases</li>
-            <li>Critical Care Medicine</li>
-        </ul>
-    </div>
+    <h2>🫁 Areas of Expertise</h2>
 
+    <div class="expertise-grid">
+
+        <div class="expertise-item">Asthma & Allergy</div>
+        <div class="expertise-item">COPD Management</div>
+        <div class="expertise-item">Tuberculosis</div>
+        <div class="expertise-item">Lung Infections</div>
+        <div class="expertise-item">Sleep Disorders</div>
+        <div class="expertise-item">Sleep Apnea</div>
+        <div class="expertise-item">Bronchoscopy</div>
+        <div class="expertise-item">EBUS Procedures</div>
+        <div class="expertise-item">Pleural Diseases</div>
+        <div class="expertise-item">Critical Care</div>
+
+    </div>
+</div>
+
+   <div class="card">
+
+<h2>📅 Consultation Information</h2>
+
+<div class="consultation-row">
+
+<div class="consult-box">
+<i class="fas fa-calendar-alt"></i>
+<h3>Days</h3>
+<p>Monday - Saturday</p>
+</div>
+
+<div class="consult-box">
+<i class="fas fa-clock"></i>
+<h3>Timings</h3>
+<p>08:00 AM - 05:00 PM</p>
+</div>
+
+<div class="consult-box">
+<i class="fas fa-phone"></i>
+<h3>Appointment</h3>
+<p>+91 74164 43331</p>
+</div>
+
+</div>
+
+</div>
     <div class="card">
-        <h2>Consultation Details</h2>
 
-        <p><strong>Hospital:</strong><br>
-        Apollo Hospitals, Financial District,<br>
-        Nanakramguda, Hyderabad – 500032</p>
+<h2>📍 Hospital Address</h2>
 
-        <br>
-
-        <p><strong>Consultation Days:</strong>
-        Monday to Saturday</p>
-
-        <p><strong>Timings:</strong>
-        08:00 AM – 05:00 PM</p>
-
-        <p><strong>Appointment Number:</strong>
-        +91 74164 43331</p>
-
-        
-    </div>
+<p>
+Apollo Hospitals, Financial District<br>
+Nanakramguda, Hyderabad – 500032
+</p>
 
 </div>
 
