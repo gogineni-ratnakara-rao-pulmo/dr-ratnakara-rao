@@ -277,7 +277,23 @@ background-attachment:fixed;
 }
 
 .doctor-photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
     cursor:pointer;
+    transition:0.3s;
+}
+
+.doctor-photo:hover{
+    transform:scale(1.05);
+}
+    .photo-note{
+    font-size:12px;
+    color:#dbe8ff;
+    margin-top:8px;
 }
 </style>
 </head>
@@ -289,7 +305,8 @@ background-attachment:fixed;
      alt="Dr. Gogineni Ratnakara Rao"
      class="doctor-photo"
      onclick="openImage()">
-<p style="font-size:13px;color:#666;">
+
+       <p class="photo-note">
 📸 Tap photo to enlarge
 </p>
 
