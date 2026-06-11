@@ -247,6 +247,38 @@ url('lung-bg.png');
 background-size:cover;
 background-attachment:fixed;
 }
+    .modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.95);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:15px;
+}
+
+.close-btn{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.doctor-photo{
+    cursor:pointer;
+}
 </style>
 </head>
 
@@ -254,14 +286,12 @@ background-attachment:fixed;
    <div class="header">
 
 <img src="doctor.jpg"
-style="
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid white;
-box-shadow:0 4px 20px rgba(0,0,0,0.2);
-margin-bottom:20px;">
+     alt="Dr. Gogineni Ratnakara Rao"
+     class="doctor-photo"
+     onclick="openImage()">
+<p style="font-size:13px;color:#666;">
+📸 Tap photo to enlarge
+</p>
 
 <h1>Dr. Gogineni Ratnakara Rao</h1>
 
@@ -422,6 +452,21 @@ Senior Consultant – Clinical & Interventional Pulmonary Medicine
 <footer>
     © 2026 Dr. Gogineni Ratnakara Rao | All Rights Reserved
 </footer>
+<div id="imageModal" class="modal" onclick="closeImage()">
+    <span class="close-btn">&times;</span>
 
+    <img id="modalImage"
+         src="doctor.jpg"
+         alt="Dr. Gogineni Ratnakara Rao">
+</div>
+<script>
+function openImage() {
+    document.getElementById("imageModal").style.display = "flex";
+}
+
+function closeImage() {
+    document.getElementById("imageModal").style.display = "none";
+}
+</script>
 </body>
 </html>
