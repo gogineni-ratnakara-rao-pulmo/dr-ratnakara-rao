@@ -335,6 +335,22 @@ background-attachment:fixed;
     text-align:center;
     box-shadow:0 5px 15px rgba(0,91,170,0.2);
 }
+    .review{
+    background:linear-gradient(135deg,#4285F4,#34A853);
+    color:white;
+}
+
+.review:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+.thank-you{
+    text-align:center;
+    margin:40px 0;
+    color:#666;
+    font-size:15px;
+    font-style:italic;
+}
 </style>
 </head>
 
@@ -468,7 +484,18 @@ class="action-card youtube" target="_blank">
 <p>Anything in Lung</p>
 </div>
 </a>
+<a href="https://g.page/r/Ce2gMblBniVaEAE/review"
+class="action-card review"
+target="_blank">
 
+<i class="fab fa-google"></i>
+
+<div>
+<h3>Google Reviews</h3>
+<p>Share Your Experience</p>
+</div>
+
+</a>
 </div>
 
 </div>
@@ -524,6 +551,23 @@ class="action-card youtube" target="_blank">
 
 </div>
     <div class="card">
+<div class="card">
+
+<h2><i class="fab fa-google"></i> Patient Feedback</h2>
+
+<p>
+Your feedback helps us improve our services and assists other patients in making informed healthcare decisions. If you had a positive experience with Dr. Gogineni Ratnakara Rao, we would greatly appreciate your review.
+</p>
+
+<a href="https://g.page/r/Ce2gMblBniVaEAE/review"
+class="btn review"
+target="_blank">
+
+⭐ Write a Google Review
+
+</a>
+
+</div>
 
 <h2>📍 Hospital Address</h2>
 
@@ -556,6 +600,11 @@ Senior Consultant – Clinical & Interventional Pulmonary Medicine
 <footer>
     © 2026 Dr. Gogineni Ratnakara Rao | All Rights Reserved
 </footer>
+<div class="thank-you">
+
+❤️ Thank you for trusting us with your respiratory health.
+
+</div>
 <div id="imageModal" class="modal" onclick="closeImage()">
     <span class="close-btn">&times;</span>
 
@@ -564,7 +613,7 @@ Senior Consultant – Clinical & Interventional Pulmonary Medicine
          alt="Dr. Gogineni Ratnakara Rao">
 
 <script>
-    
+  
 function openImage() {
     document.getElementById("imageModal").style.display = "flex";
 }
