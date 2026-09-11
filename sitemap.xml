@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER DOMAIN: replace www.drratnakararao.com with your live domain.
+     Add a <url> block for every new page (condition pages, blog posts, FAQ). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.drratnakararao.com/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/"/>
+    <image:image>
+      <image:loc>https://www.drratnakararao.com/img/dr-gogineni-ratnakara-rao-pulmonologist-hyderabad-1120.jpg</image:loc>
+      <image:title>Dr. Gogineni Ratnakara Rao, Pulmonologist, Apollo Hospitals Hyderabad</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/asthma.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/asthma.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/asthma.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/copd.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/copd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/copd.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/interstitial-lung-disease.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/interstitial-lung-disease.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/interstitial-lung-disease.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/tuberculosis.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/tuberculosis.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/tuberculosis.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/sleep-apnea.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/sleep-apnea.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/sleep-apnea.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/bronchoscopy.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/bronchoscopy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/bronchoscopy.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/ebus-tbna.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/ebus-tbna.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/ebus-tbna.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/pleural-disease.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/pleural-disease.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/pleural-disease.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/conditions/interventional-pulmonology.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/conditions/interventional-pulmonology.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/conditions/interventional-pulmonology.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/privacy-policy.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/privacy-policy.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/terms-of-use.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/terms-of-use.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/terms-of-use.html"/>
+  </url>
+  <url>
+    <loc>https://www.drratnakararao.com/medical-disclaimer.html</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://www.drratnakararao.com/medical-disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.drratnakararao.com/medical-disclaimer.html"/>
+  </url>
+</urlset>

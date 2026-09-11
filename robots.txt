@@ -1,0 +1,7 @@
+# robots.txt - Dr. Gogineni Ratnakara Rao
+# PLACEHOLDER DOMAIN: replace www.drratnakararao.com with your live domain.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.drratnakararao.com/sitemap.xml
