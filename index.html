@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulmonologist in Hyderabad | Dr. Gogineni Ratnakara Rao</title>
-  <meta name="description" content="Dr. Gogineni Ratnakara Rao, MD (AIIMS), DM (PGIMER), senior consultant pulmonologist at Apollo Hospitals, Financial District, Hyderabad. Call to book.">
+  <meta name="description" content="Dr. Gogineni Ratnakara Rao, MD (AIIMS), DM (PGIMER), senior consultant pulmonologist at Apollo Hospitals, Financial District and Anything in Lung clinic, Chanda Nagar, Hyderabad.">
   <meta name="theme-color" content="#004a8f">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
@@ -529,41 +529,77 @@
       border-color: var(--accent);
     }
 
-    .consult-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 14px;
+    .rare-group {
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      color: var(--muted);
+      margin: 22px 0 12px;
     }
 
-    .consult-box {
+    .loc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .loc-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
       background: #f6f9fd;
       border: 1px solid #e4edf7;
       border-radius: 14px;
       padding: 20px;
-      text-align: center;
     }
 
-    .consult-box .ic {
-      font-size: 26px;
+    .loc-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
       color: var(--brand);
     }
 
-    .consult-box h3 {
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .7px;
-      color: var(--muted);
-      margin: 10px 0 4px;
+    .loc-card address {
+      font-style: normal;
+      font-size: 15px;
+      color: var(--ink);
+      line-height: 1.7;
     }
 
-    .consult-box p {
-      font-size: 17px;
-      font-weight: 700;
+    .loc-meta {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: 600;
       color: var(--ink);
     }
 
-    .consult-box a {
-      text-decoration: none;
+    .loc-meta .ic {
+      color: var(--brand);
+      margin-right: 6px;
+    }
+
+    .loc-hint {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .loc-card .btn {
+      align-self: flex-start;
+      margin-top: auto;
+    }
+
+    .loc-appt {
+      margin: 18px 0 0;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
     }
 
     .action-grid {
@@ -619,10 +655,6 @@
       background: #004a8f;
     }
 
-    .maps {
-      background: #d93025;
-    }
-
     .instagram {
       background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
     }
@@ -637,28 +669,6 @@
 
     .review {
       background: linear-gradient(135deg, #4285F4, #34A853);
-    }
-
-    .address {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 18px;
-      align-items: center;
-    }
-
-    @media(max-width:620px) {
-      .address {
-        grid-template-columns: 1fr;
-        justify-items: start;
-      }
-    }
-
-    .address address {
-      font-style: normal;
-      font-size: 16.5px;
-      color: var(--ink);
-      font-weight: 600;
-      line-height: 1.7;
     }
 
     .note {
@@ -989,9 +999,9 @@
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#conditions">Conditions</a>
+        <a href="#rare-conditions">Rare Diseases</a>
         <a href="#consultation">Consultation</a>
         <a href="#connect">Connect</a>
-        <a href="#location">Location</a>
       </div>
       <a class="nav__cta" href="tel:+917416443331">Call +91 74164 43331</a>
     </div>
@@ -1152,33 +1162,127 @@
         </div>
       </section>
 
+      <section class="card" id="rare-conditions" aria-labelledby="rare-conditions-h">
+        <h2 id="rare-conditions-h"><svg class="ic">
+            <use href="#i-lungs" />
+          </svg> Rare &amp; Ultra-Rare Lung Diseases</h2>
+        <p class="lead">Patient guides to uncommon lung conditions that are often diagnosed late or mistaken for more
+          common diseases such as asthma or tuberculosis.</p>
+        <h3 class="rare-group">Rare lung diseases</h3>
+        <div class="condition-grid">
+            <a class="condition-link" href="conditions/idiopathic-pulmonary-fibrosis.html">Idiopathic Pulmonary Fibrosis (IPF)<span>Progressive lung scarring; antifibrotics</span></a>
+            <a class="condition-link" href="conditions/sarcoidosis.html">Sarcoidosis<span>Granulomas in lungs and nodes; not TB</span></a>
+            <a class="condition-link" href="conditions/cystic-fibrosis.html">Cystic Fibrosis (CF)<span>Inherited mucus disease; CFTR modulators</span></a>
+            <a class="condition-link" href="conditions/pulmonary-arterial-hypertension.html">Pulmonary Arterial Hypertension (PAH)<span>High lung blood pressure; targeted therapy</span></a>
+            <a class="condition-link" href="conditions/cteph.html">Chronic Thromboembolic Pulmonary Hypertension (CTEPH)<span>Chronic lung clots; potentially curable</span></a>
+            <a class="condition-link" href="conditions/alpha-1-antitrypsin-deficiency.html">Alpha-1 Antitrypsin Deficiency (AATD)<span>Inherited early emphysema and liver disease</span></a>
+            <a class="condition-link" href="conditions/primary-ciliary-dyskinesia.html">Primary Ciliary Dyskinesia (PCD)<span>Inherited cilia defect; chronic wet cough</span></a>
+            <a class="condition-link" href="conditions/granulomatosis-with-polyangiitis.html">Granulomatosis with Polyangiitis (GPA)<span>ANCA vasculitis of lungs, sinuses, kidneys</span></a>
+            <a class="condition-link" href="conditions/egpa.html">Eosinophilic Granulomatosis with Polyangiitis (EGPA)<span>Asthma, eosinophilia and vasculitis</span></a>
+            <a class="condition-link" href="conditions/abpa.html">Allergic Bronchopulmonary Aspergillosis (ABPA)<span>Aspergillus allergy in asthma; mucus plugs</span></a>
+            <a class="condition-link" href="conditions/chronic-eosinophilic-pneumonia.html">Chronic Eosinophilic Pneumonia<span>Eosinophil lung shadows; steroid-responsive</span></a>
+            <a class="condition-link" href="conditions/acute-eosinophilic-pneumonia.html">Acute Eosinophilic Pneumonia<span>Sudden lung inflammation, often after smoking</span></a>
+            <a class="condition-link" href="conditions/acute-interstitial-pneumonia.html">Acute Interstitial Pneumonia (AIP)<span>Rapid unexplained lung injury (Hamman-Rich)</span></a>
+            <a class="condition-link" href="conditions/desquamative-interstitial-pneumonia.html">Desquamative Interstitial Pneumonia (DIP)<span>Smoking-related ILD; improves on quitting</span></a>
+            <a class="condition-link" href="conditions/lymphocytic-interstitial-pneumonia.html">Lymphocytic Interstitial Pneumonia (LIP)<span>Lymphocyte lung infiltration with cysts</span></a>
+            <a class="condition-link" href="conditions/pulmonary-langerhans-cell-histiocytosis.html">Pulmonary Langerhans Cell Histiocytosis (PLCH)<span>Smoking-related nodules and lung cysts</span></a>
+            <a class="condition-link" href="conditions/bronchiolitis-obliterans.html">Bronchiolitis Obliterans<span>Scarring of the small airways</span></a>
+            <a class="condition-link" href="conditions/pleural-mesothelioma.html">Pleural Mesothelioma<span>Asbestos-related cancer of the pleura</span></a>
+            <a class="condition-link" href="conditions/pulmonary-amyloidosis.html">Pulmonary Amyloidosis<span>Abnormal protein deposits in the lungs</span></a>
+            <a class="condition-link" href="conditions/primary-pulmonary-lymphoma.html">Primary Pulmonary Lymphoma<span>Lymphoma arising in the lung (often MALT)</span></a>
+            <a class="condition-link" href="conditions/pulmonary-avm.html">Pulmonary Arteriovenous Malformation (AVM)<span>Abnormal lung vessels; HHT; embolisation</span></a>
+            <a class="condition-link" href="conditions/swyer-james-macleod-syndrome.html">Swyer-James-MacLeod Syndrome<span>Hyperlucent lung after childhood infection</span></a>
+            <a class="condition-link" href="conditions/catamenial-pneumothorax.html">Catamenial Pneumothorax<span>Collapsed lung linked to menstrual cycle</span></a>
+            <a class="condition-link" href="conditions/pulmonary-sequestration.html">Pulmonary Sequestration<span>Congenital non-functioning lung segment</span></a>
+            <a class="condition-link" href="conditions/dipnech.html">DIPNECH<span>Neuroendocrine cell growth; chronic cough</span></a>
+        </div>
+        <h3 class="rare-group">Ultra-rare lung diseases</h3>
+        <div class="condition-grid">
+            <a class="condition-link" href="conditions/lymphangioleiomyomatosis.html">Lymphangioleiomyomatosis (LAM)<span>Cystic lung disease in women; sirolimus</span></a>
+            <a class="condition-link" href="conditions/pulmonary-alveolar-proteinosis.html">Pulmonary Alveolar Proteinosis (PAP)<span>Surfactant build-up; lavage, GM-CSF</span></a>
+            <a class="condition-link" href="conditions/pulmonary-alveolar-microlithiasis.html">Pulmonary Alveolar Microlithiasis (PAM)<span>Inherited calcium deposits in air sacs</span></a>
+            <a class="condition-link" href="conditions/pulmonary-veno-occlusive-disease.html">Pulmonary Veno-Occlusive Disease (PVOD)<span>Rare form of PH affecting lung veins</span></a>
+            <a class="condition-link" href="conditions/pulmonary-capillary-haemangiomatosis.html">Pulmonary Capillary Haemangiomatosis (PCH)<span>Capillary overgrowth causing lung PH</span></a>
+            <a class="condition-link" href="conditions/pleuroparenchymal-fibroelastosis.html">Pleuroparenchymal Fibroelastosis (PPFE)<span>Upper-lobe scarring of lung and pleura</span></a>
+            <a class="condition-link" href="conditions/idiopathic-pulmonary-haemosiderosis.html">Idiopathic Pulmonary Haemosiderosis (IPH)<span>Recurrent lung bleeding and anaemia</span></a>
+            <a class="condition-link" href="conditions/anti-gbm-disease.html">Anti-GBM Disease (Goodpasture&#x27;s)<span>Autoimmune lung bleeding and kidney injury</span></a>
+            <a class="condition-link" href="conditions/birt-hogg-dube-syndrome.html">Birt-Hogg-Dube Syndrome (BHD)<span>Inherited lung cysts and pneumothorax</span></a>
+            <a class="condition-link" href="conditions/hermansky-pudlak-pulmonary-fibrosis.html">Hermansky-Pudlak Syndrome Pulmonary Fibrosis<span>Fibrosis with albinism and bleeding</span></a>
+            <a class="condition-link" href="conditions/surfactant-protein-deficiency.html">Surfactant Protein Deficiency<span>Genetic surfactant disorders, all ages</span></a>
+            <a class="condition-link" href="conditions/erdheim-chester-disease.html">Erdheim-Chester Disease<span>Rare histiocytosis; BRAF-targeted therapy</span></a>
+            <a class="condition-link" href="conditions/tracheobronchopathia-osteochondroplastica.html">Tracheobronchopathia Osteochondroplastica (TO)<span>Bony nodules in the windpipe lining</span></a>
+            <a class="condition-link" href="conditions/mounier-kuhn-syndrome.html">Mounier-Kuhn Syndrome (Tracheobronchomegaly)<span>Enlarged, floppy windpipe and bronchi</span></a>
+            <a class="condition-link" href="conditions/williams-campbell-syndrome.html">Williams-Campbell Syndrome<span>Congenital bronchial cartilage deficiency</span></a>
+            <a class="condition-link" href="conditions/yellow-nail-syndrome.html">Yellow Nail Syndrome<span>Yellow nails, lymphoedema, pleural effusion</span></a>
+            <a class="condition-link" href="conditions/pulmonary-epithelioid-haemangioendothelioma.html">Pulmonary Epithelioid Haemangioendothelioma (PEH)<span>Rare vascular tumour; multiple lung nodules</span></a>
+            <a class="condition-link" href="conditions/pulmonary-blastoma.html">Pulmonary Blastoma<span>Rare lung cancer resembling fetal lung</span></a>
+        </div>
+      </section>
+
       <section class="card" id="consultation" aria-labelledby="consultation-h">
         <h2 id="consultation-h"><svg class="ic">
             <use href="#i-calendar-days" />
-          </svg> Consultation Information</h2>
-        <div class="consult-grid">
-          <div class="consult-box">
-            <svg class="ic">
-              <use href="#i-calendar-days" />
-            </svg>
-            <h3>Days</h3>
-            <p>Monday - Saturday</p>
-          </div>
-          <div class="consult-box">
-            <svg class="ic">
-              <use href="#i-clock" />
-            </svg>
-            <h3>Timings</h3>
-            <p>8:00 AM - 5:00 PM</p>
-          </div>
-          <div class="consult-box">
-            <svg class="ic">
-              <use href="#i-phone" />
-            </svg>
-            <h3>Appointments</h3>
-            <p><a href="tel:+917416443331">+91 74164 43331</a></p>
-          </div>
+          </svg> Consultation Locations &amp; Timings</h2>
+        <div class="loc-grid">
+          <article class="loc-card">
+            <h3><svg class="ic">
+                <use href="#i-hospital" />
+              </svg> Apollo Hospitals, Financial District</h3>
+            <address>
+              Pulmonology Department, Room No. 4, 1st Floor<br>
+              Financial District, Nanakramguda, Serilingampally<br>
+              Hyderabad, Telangana - 500032
+            </address>
+            <ul class="loc-meta">
+              <li><svg class="ic">
+                  <use href="#i-calendar-days" />
+                </svg> Monday - Saturday</li>
+              <li><svg class="ic">
+                  <use href="#i-clock" />
+                </svg> 8:30 AM - 5:00 PM</li>
+              <li><svg class="ic">
+                  <use href="#i-phone" />
+                </svg> Apollo Call Center: <a href="tel:+914069321020">040-69321020</a></li>
+              <li><svg class="ic">
+                  <use href="#i-phone" />
+                </svg> Apollo 24/7 Video Consultation: <a href="tel:+918045050479">080-45050479</a></li>
+            </ul>
+            <p class="loc-hint">At the hospital, ask for Pulmonology Department - Dr. Ratnakara Rao Gogineni.</p>
+            <a class="btn btn--solid" href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5" target="_blank" rel="noopener">
+              <svg class="ic">
+                <use href="#i-diamond-turn-right" />
+              </svg> Get Directions
+            </a>
+          </article>
+
+          <article class="loc-card">
+            <h3><svg class="ic">
+                <use href="#i-lungs" />
+              </svg> Anything in Lung Clinic, Chanda Nagar</h3>
+            <address>
+              3rd Floor, Tanishq Building, Patancheru - Chandanagar Road<br>
+              Next to Vasan Eye Care, Gangaram, Engineers Enclave, Chanda Nagar<br>
+              Hyderabad, Telangana - 500050
+            </address>
+            <ul class="loc-meta">
+              <li><svg class="ic">
+                  <use href="#i-calendar-days" />
+                </svg> Monday - Saturday (Thursday closed)</li>
+              <li><svg class="ic">
+                  <use href="#i-clock" />
+                </svg> 6:00 PM - 9:00 PM</li>
+            </ul>
+            <a class="btn btn--solid" href="https://maps.app.goo.gl/rw6yKMEjbu29uJur6" target="_blank" rel="noopener">
+              <svg class="ic">
+                <use href="#i-diamond-turn-right" />
+              </svg> Get Directions
+            </a>
+          </article>
         </div>
+
+        <p class="loc-appt"><svg class="ic">
+            <use href="#i-phone" />
+          </svg> Appointments &amp; enquiries for both locations: <a href="tel:+917416443331">+91 74164 43331</a></p>
 
         <div class="note">
           <svg class="ic">
@@ -1227,16 +1331,6 @@
             </div>
           </a>
 
-          <a href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5" class="action-card maps" target="_blank" rel="noopener">
-            <svg class="ic">
-              <use href="#i-location-dot" />
-            </svg>
-            <div>
-              <h3>Directions</h3>
-              <p>Open in Google Maps</p>
-            </div>
-          </a>
-
           <a href="https://g.page/r/Ce2gMblBniVaEAE/review" class="action-card review" target="_blank" rel="noopener">
             <svg class="ic">
               <use href="#i-google" />
@@ -1277,23 +1371,6 @@
               <h3>Facebook</h3>
               <p>Follow for updates</p>
             </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="card" id="location" aria-labelledby="location-h">
-        <h2 id="location-h"><svg class="ic">
-            <use href="#i-hospital" />
-          </svg> Hospital Address</h2>
-        <div class="address">
-          <address>
-            Apollo Hospitals, Financial District<br>
-            Nanakramguda, Hyderabad - 500032
-          </address>
-          <a class="btn btn--solid" href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5" target="_blank" rel="noopener">
-            <svg class="ic">
-              <use href="#i-diamond-turn-right" />
-            </svg> Get Directions
           </a>
         </div>
       </section>
@@ -1375,7 +1452,7 @@
         <use href="#i-whatsapp" />
       </svg> WhatsApp
     </a>
-    <a class="sc-map" href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5" target="_blank" rel="noopener">
+    <a class="sc-map" href="#consultation">
       <svg class="ic" aria-hidden="true">
         <use href="#i-diamond-turn-right" />
       </svg> Directions
@@ -1409,7 +1486,7 @@
   "telephone": "+91-74164-43331",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Apollo Hospitals, Financial District, Nanakramguda",
+    "streetAddress": "Pulmonology Department, Room No. 4, 1st Floor, Apollo Hospitals, Financial District, Nanakramguda, Serilingampally",
     "addressLocality": "Hyderabad",
     "addressRegion": "Telangana",
     "postalCode": "500032",
@@ -1424,7 +1501,39 @@
     "@type": "City",
     "name": "Hyderabad"
   },
-  "openingHours": "Mo-Sa 08:00-17:00",
+  "openingHours": "Mo-Sa 08:30-17:00",
+  "location": [
+    {
+      "@type": "Hospital",
+      "name": "Apollo Hospitals, Financial District",
+      "telephone": "+91-40-69321020",
+      "hasMap": "https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5",
+      "openingHours": "Mo-Sa 08:30-17:00",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pulmonology Department, Room No. 4, 1st Floor, Financial District, Nanakramguda, Serilingampally",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "postalCode": "500032",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Anything in Lung",
+      "telephone": "+91-74164-43331",
+      "hasMap": "https://maps.app.goo.gl/rw6yKMEjbu29uJur6",
+      "openingHours": "Mo-We,Fr-Sa 18:00-21:00",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3rd Floor, Tanishq Building, Patancheru - Chandanagar Road, Next to Vasan Eye Care, Gangaram, Engineers Enclave, Chanda Nagar",
+        "addressLocality": "Hyderabad",
+        "addressRegion": "Telangana",
+        "postalCode": "500050",
+        "addressCountry": "IN"
+      }
+    }
+  ],
   "sameAs": [
     "https://www.youtube.com/@Anythinginlung",
     "https://www.instagram.com/gogineni.ratnakar",
