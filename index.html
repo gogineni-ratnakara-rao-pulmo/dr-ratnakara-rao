@@ -792,6 +792,70 @@
       }
     }
 
+    .sticky-call {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 95;
+      background: #fff;
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -4px 16px rgba(8, 12, 18, .12);
+      padding: 8px 10px calc(8px + env(safe-area-inset-bottom));
+      gap: 8px;
+    }
+
+    .sticky-call a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      min-height: 46px;
+      border-radius: 10px;
+      font-size: 14.5px;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .sticky-call .sc-call {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .sticky-call .sc-wa {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .sticky-call .sc-map {
+      background: #fff;
+      color: var(--brand);
+      border: 1px solid var(--line);
+    }
+
+    .sticky-call .ic {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    @media(max-width:760px) {
+      .sticky-call {
+        display: flex;
+      }
+
+      .floating-whatsapp {
+        display: none;
+      }
+
+      body {
+        padding-bottom: 66px;
+      }
+    }
+
     .modal {
       display: none;
       position: fixed;
@@ -1299,6 +1363,24 @@
       <use href="#i-whatsapp" />
     </svg>
   </a>
+
+  <nav class="sticky-call" aria-label="Quick contact">
+    <a class="sc-call" href="tel:+917416443331">
+      <svg class="ic" aria-hidden="true">
+        <use href="#i-phone" />
+      </svg> Call
+    </a>
+    <a class="sc-wa" href="https://wa.me/917416443331" target="_blank" rel="noopener">
+      <svg class="ic" aria-hidden="true">
+        <use href="#i-whatsapp" />
+      </svg> WhatsApp
+    </a>
+    <a class="sc-map" href="https://maps.app.goo.gl/Uhi8FmbzCYQWNGsy5" target="_blank" rel="noopener">
+      <svg class="ic" aria-hidden="true">
+        <use href="#i-diamond-turn-right" />
+      </svg> Directions
+    </a>
+  </nav>
 
   <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Photo of Dr. Gogineni Ratnakara Rao">
     <button class="modal__close" type="button" onclick="closeImage()" aria-label="Close photo">&times;</button>
